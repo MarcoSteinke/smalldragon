@@ -28,3 +28,7 @@ a {
 	margin: 2px;
 	padding: 5px;
 }
+
+pre {
+    background: rgba(235 204 145);
+}
