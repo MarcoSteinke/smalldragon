@@ -30,13 +30,59 @@
 
 	<h3> Example 1: Harshad Numbers</h3>
 
+	This example presents a basic implementation of the Harshad numbers. A Harshad Number is a number that is divisible
+	by the sum of its digits.
+
+	For example <strong>16218</strong> is a Harshard number, because the digits sum up to <strong>18</strong> and 16218 mod 18 equals 0, so it is
+	divisible by the sum of its digits.
+	
+	If you do want to know more about the topic, you can <a href="https://en.wikipedia.org/wiki/Harshad_number">click here</a> and find out!
+
+	So let's start with the implementation:
+
+	<br><br>
+	<h5>1. Define the entry point</h5>
+
+	As in other programming languages, in smalldragon you start with the definition of your entry point.
+	In smalldragon the main method (= entry point) is inspired by the version from the C programming language.
+	<br><br>
+	The following code snippet demonstrates the most basic form of the main method in smalldragon:
+	<pre>
+		<code>
+fn main () ~> int {
+	
+	return 0;
+
+}
+		</code>
+	</pre>
+
+	<ul>
+		<li><strong>fn</strong> is used to define a method (function)</li>
+		<li><strong>main</strong> is the name of the method</li>
+		<li><strong>()</strong> means no parameters for this method</li>
+		<li><strong>~> TYPE</strong> tells the compiler which type is returned</li>
+	</ul>
+
+	<br>
+	<br>
+	The main method always returns an <strong>integer</strong> to return a status code to the operating system. In this case smalldragon returns
+	<strong>0</strong> as "everything is okay" (like in C).
+	<br>
+	<br>
+	<h5>2. Implement the logic:</h5>
+
+	The logic will be in a separate method called <strong>testharshad</strong> and will have the following properties:
+
+	<ul>
+		<li>parameter: <strong>int n</strong></li>
+		<li>return type: <strong>int</strong></li>
+	</ul>
+	
 	<pre><code>
 #include <stdio.h>
 
 fn main () ~> int {
-	
-	//A Harshad Number is a number that is divisible
-	//by the sum of its digits
 
 	i = 1;
 	loop 20 {
