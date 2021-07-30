@@ -15,6 +15,8 @@ struct STSTLine {
 	struct StructDecl* decl;
 	
 	bool is_private;
+
+	char* type_name_in_c; //may be NULL
 };
 
 
